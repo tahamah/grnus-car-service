@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
 
 const useServicesData = () => {
-    const [data, setData] = useState([])
+    const [services, setServices] = useState([])
     useEffect(() => {
         fetch('car-data.json')
             .then((res) => res.json())
-            .then((data) => setData(data))
+            .then((data) => setServices(data))
     }, [])
-    return data
+    return services
 }
 
 export default useServicesData
