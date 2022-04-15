@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
+    const year = new Date().getFullYear()
     return (
         <footer className="bg-white dark:bg-gray-800 mt-96 pt-96">
             <div className="container px-6 py-4 mx-auto">
@@ -158,7 +159,7 @@ const Footer = () => {
 
                 <div>
                     <p className="text-center text-gray-800 dark:text-white">
-                        © Brand 2020 - All rights reserved
+                        © Brand {year} - All rights reserved
                     </p>
                 </div>
             </div>
