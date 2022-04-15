@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Service = ({ service }) => {
     const { name, img, body, title, location } = service
     return (
-        <div class="max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+        <div class="max-w-sm mx-auto transition ease-in-out delay-100 overflow-hidden hover:drop-shadow-2xl hover:-translate-y-1  duration-500 hover:scale-110  bg-white rounded-lg shadow-lg dark:bg-gray-800">
             <img
                 class="object-cover object-center w-full h-56"
                 src={img}
@@ -13,7 +13,7 @@ const Service = ({ service }) => {
 
             <div class="flex items-center px-6 py-3 bg-gray-900">
                 <svg
-                    fill="#fff"
+                    fill="#ffffff"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"

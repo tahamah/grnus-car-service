@@ -16,7 +16,7 @@ const Home = () => {
         lg:px-24
         max-w-7xl"
         >
-            <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-12 mx-auto lg:grid-cols-3">
+            <div className="grid w-full grid-cols-1 md:grid-cols-2  gap-12 mx-auto lg:grid-cols-3">
                 {services.map((service) => (
                     <Service key={service.id} service={service}></Service>
                 ))}
